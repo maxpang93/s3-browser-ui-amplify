@@ -42,3 +42,12 @@ $ aws sts get-caller-identity
 ```bash
 npm run dev
 ```
+
+## For production
+```bash
+# build static files
+npm run build
+
+# run app
+npm run preview
+```

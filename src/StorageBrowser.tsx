@@ -22,7 +22,8 @@ export const { StorageBrowser } = createStorageBrowser({
             type: "BUCKET",
             permissions: ["list", "get", "write", "delete"]
           }
-        ]
+        ],
+        nextToken: undefined
       };
     },
 
@@ -31,7 +32,7 @@ export const { StorageBrowser } = createStorageBrowser({
         credentials: {
           accessKeyId: accessKeyId,
           secretAccessKey: secretAccessKey,
-          sessionToken: undefined,
+          sessionToken: "",
           expiration: new Date(Date.now() + 3600 * 1000)
         }
       };
